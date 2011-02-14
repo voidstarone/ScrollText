@@ -1,0 +1,6 @@
+ScrollText README
+--
+
+Description:
+Arduino Library for displaying Scrolling Text on a single Shift Register driven Seven Segment Display.
+
