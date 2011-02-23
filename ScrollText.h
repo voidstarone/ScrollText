@@ -22,14 +22,14 @@ class ScrollText {
     
     void scrollText(char text[]);
     void scrollText(char text[], int duration);
-    void scrollText(char text[], short int matchCase);
-    void scrollText(char text[], int duration, short int matchCase);
+    void scrollText(char text[], bool matchCase);
+    void scrollText(char text[], int duration, bool matchCase);
     
     void scrollText(int num);
     void scrollText(int num, int duration);
     
     void dispChar(int digit);
-    void dispChar(int digit, short int matchCase);
+    void dispChar(int digit, bool matchCase);
     
     void putOnDisp(char b);
   
@@ -160,4 +160,3 @@ class ScrollText {
 
 };
 #endif
-
