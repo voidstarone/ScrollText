@@ -50,7 +50,7 @@ void ScrollText::scrollText(char text[]) {
 }
 
 //Display the characters in the string taken as an argument one by one for the default time each, giving the option to match case
-void ScrollText::scrollText(char text[], short int matchCase) {
+void ScrollText::scrollText(char text[], bool matchCase) {
   text = replaceAll(text, 32, '_');
   int i;
   for (i=0; i<strlen(text); i++) {
@@ -76,7 +76,7 @@ void ScrollText::scrollText(char text[], int duration) {
 }
 
 //Display the characters in the string taken as an argument one by one for the specified number of milliseconds each, giving the option to match case.
-void ScrollText::scrollText(char text[], int duration, short int matchCase) {
+void ScrollText::scrollText(char text[], int duration, bool matchCase) {
   text = replaceAll(text, 32, '_');
   int i;
   for (i=0; i<strlen(text); i++) {
@@ -280,7 +280,7 @@ void ScrollText::dispChar(int digit) {
 }
 
 //Display a single character on the seven segment display, with the option of matching case, might look better, but far more ambiguous.
-void ScrollText::dispChar(int digit, short int matchCase) {
+void ScrollText::dispChar(int digit, bool matchCase) {
   char b = B00000000;
   if (digit == blank) {
     b = dispBlank;
